@@ -1,0 +1,55 @@
+.header{
+    .header__top{
+        background-color: #c4c4c4;
+        height: 330px;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        .header__top__logo{
+            border: 1px solid black;
+            width: 100px;
+            height: 100px;
+            margin: 85px auto;
+        }
+        .header__top__titulo{
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 28,13px;
+            justify-self: flex-end;
+        }
+    }
+    .header__bottom{
+        height: 330px;
+        padding: 20px;
+        display: flex;
+        flex-flow: column;
+        // align-items: center;
+        justify-content: space-between;
+        .header__bottom__titulo{
+            align-self: center;
+            width: 65%;
+            font-size: 18px;
+            font-weight: 400;
+            text-align: center;
+            line-height: 21,09px;
+        }
+        .header__bottom__texto,
+        .header__bottom__puedesVisitarnos{
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 14,06px;
+            align-self: left;
+        }
+        .header__bottom__ul{
+            display: flex;
+            justify-content: space-around;
+            .header__bottom__ul__li{
+                list-style: none;
+                    .header__bottom__ul__li__a__i{
+                        font-size: 50px;
+                    }
+            }
+        }
+    }
+}
