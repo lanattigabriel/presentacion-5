@@ -88,7 +88,7 @@ body {
 .producto {
   border: 1px solid black;
   margin: 10px;
-  padding: 3px;
+  padding: 6px 8px;
   height: 230px;
   width: 168px;
   display: flex;
@@ -100,7 +100,7 @@ body {
   .producto .producto__img {
     width: 150px;
     height: 150px;
-    margin: 5px;
+    margin: 3px;
     background-color: #e8e5e5;
     border: 1px solid black;
     border-radius: 8px;
@@ -136,3 +136,96 @@ body {
     height: 50px;
     border: 1px solid black;
     border-radius: 50%; }
+
+.aboutUs {
+  margin: 15px 0px; }
+  .aboutUs img {
+    background-color: dimgrey;
+    width: 100%;
+    height: 100px; }
+  .aboutUs .historia {
+    margin: 30px 5px; }
+    .aboutUs .historia p {
+      padding: 5px 0px;
+      margin: 5px 0px;
+      text-align: center, justify;
+      font-size: 18px; }
+  .aboutUs .aboutUno {
+    margin: 35px 5px;
+    display: flex; }
+    .aboutUs .aboutUno .mision p {
+      padding: 5px 0px;
+      text-align: center, justify;
+      font-size: 18px; }
+    .aboutUs .aboutUno .vision {
+      margin-left: 18px; }
+      .aboutUs .aboutUno .vision p {
+        padding: 5px 0px;
+        text-align: center, justify;
+        font-size: 18px; }
+  .aboutUs .valores {
+    margin: 40px 5px;
+    font-size: 18px; }
+    .aboutUs .valores h4 {
+      padding: 5px 0px; }
+    .aboutUs .valores .primerValor, .aboutUs .valores .segundoValor, .aboutUs .valores .tercerValor {
+      display: flex;
+      justify-content: center;
+      margin: 10px 0px;
+      padding: 5px 0px; }
+      .aboutUs .valores .primerValor img, .aboutUs .valores .segundoValor img, .aboutUs .valores .tercerValor img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50px; }
+      .aboutUs .valores .primerValor p, .aboutUs .valores .segundoValor p, .aboutUs .valores .tercerValor p {
+        margin-left: 15px;
+        height: 28px; }
+
+.footer {
+  background-color: #c4c4c4;
+  padding: 10px 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
+  .footer .footer__top {
+    margin: 10px 5px; }
+    .footer .footer__top .footer__top__img {
+      background-color: darkgrey;
+      width: 100px;
+      height: 100px; }
+  .footer .footer__bottom {
+    margin: 10px 5px; }
+    .footer .footer__bottom .footer__top__titulo {
+      text-align: right;
+      font-size: 18px;
+      margin-bottom: 15px; }
+    .footer .footer__bottom .footer__bottom__disenio {
+      margin-top: 38px;
+      text-align: right;
+      font-size: 18px; }
+
+.redes {
+  margin: 10px 5px; }
+  .redes .redes__clientesDicen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 180px; }
+    .redes .redes__clientesDicen .classP {
+      display: none; }
+    .redes .redes__clientesDicen p {
+      margin: 15px 5px;
+      text-align: center, justify;
+      height: 56px;
+      font-size: 18px; }
+  .redes .redes__iconos {
+    padding: 20px; }
+    .redes .redes__iconos h3 {
+      margin: 5px; }
+    .redes .redes__iconos ul {
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 50px; }
+      .redes .redes__iconos ul li a {
+        text-decoration: none; }
