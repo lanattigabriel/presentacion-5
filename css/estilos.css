@@ -21,6 +21,7 @@ body {
   .header .header__top .header__top__titulo {
     font-weight: 400;
     font-size: 24px;
+    color: #592E0B;
     line-height: 28,13px;
     justify-self: flex-end; }
 
@@ -31,6 +32,7 @@ body {
   flex-flow: column;
   justify-content: space-between; }
   .header .header__bottom .header__bottom__titulo {
+    color: #592E0B;
     align-self: center;
     width: 65%;
     font-size: 18px;
@@ -39,6 +41,7 @@ body {
     line-height: 21,09px; }
   .header .header__bottom .header__bottom__texto,
   .header .header__bottom .header__bottom__puedesVisitarnos {
+    color: #592E0B;
     font-size: 12px;
     font-weight: 400;
     line-height: 14,06px;
@@ -56,7 +59,7 @@ body {
   flex-flow: row nowrap;
   justify-content: space-between;
   padding: 10px;
-  background-color: #c4c4c4;
+  background-color: #786855;
   position: sticky;
   width: 100%;
   height: 60px;
@@ -64,17 +67,20 @@ body {
   z-index: 1; }
   .nav .nav__logo {
     display: flex;
-    align-items: center; }
+    align-items: center;
+    font-family: 'Playfair Display', serif; }
     .nav .nav__logo .nav__logo__img {
       width: 49px;
       height: 50px;
       background-color: #e8e5e5; }
     .nav .nav__logo .nav__logo__titulo {
+      color: white;
       font-size: 24px;
       font-weight: 400;
       margin: 9px; }
   .nav .nav__bars {
     font-size: 20px;
+    color: white;
     align-self: center;
     margin-right: 30px;
     cursor: pointer; }
@@ -106,25 +112,31 @@ body {
     border-radius: 8px;
     align-self: center; }
   .producto .producto__nombre {
-    text-align: center; }
+    color: #592E0B;
+    text-align: center;
+    font-family: 'Playfair Display', serif; }
   .producto .producto__caracteristicas,
   .producto .producto__descripcion {
+    font-family: 'Playfair Display', serif;
     font-size: 12px;
     margin: 2px;
     text-align: end; }
 
 .verMas {
-  background-color: #e8e5e5;
+  background-color: #7C8278;
+  font-family: 'Playfair Display', serif;
   margin: 10px 0;
   display: flex;
   justify-content: space-between; }
   .verMas .verMas__titulo {
+    color: white;
     align-self: center;
     margin: 3px 10px; }
   .verMas .verMas__link {
+    color: white;
+    font-size: 12px;
     text-decoration: none;
-    margin: 3px 10px;
-    color: black; }
+    margin: 3px 10px; }
 
 .tiendaOnline {
   display: flex;
@@ -145,20 +157,32 @@ body {
     height: 100px; }
   .aboutUs .historia {
     margin: 30px 5px; }
+    .aboutUs .historia h4 {
+      color: #592E0B;
+      font-size: 24px;
+      font-weight: normal; }
     .aboutUs .historia p {
       padding: 5px 0px;
       margin: 5px 0px;
-      text-align: center, justify;
+      text-align: center;
       font-size: 18px; }
   .aboutUs .aboutUno {
     margin: 35px 5px;
     display: flex; }
+    .aboutUs .aboutUno .mision h4 {
+      color: #592E0B;
+      font-size: 24px;
+      font-weight: normal; }
     .aboutUs .aboutUno .mision p {
       padding: 5px 0px;
       text-align: center, justify;
       font-size: 18px; }
     .aboutUs .aboutUno .vision {
       margin-left: 18px; }
+      .aboutUs .aboutUno .vision h4 {
+        color: #592E0B;
+        font-size: 24px;
+        font-weight: normal; }
       .aboutUs .aboutUno .vision p {
         padding: 5px 0px;
         text-align: center, justify;
@@ -167,6 +191,9 @@ body {
     margin: 40px 5px;
     font-size: 18px; }
     .aboutUs .valores h4 {
+      color: #592E0B;
+      font-size: 24px;
+      font-weight: normal;
       padding: 5px 0px; }
     .aboutUs .valores .primerValor, .aboutUs .valores .segundoValor, .aboutUs .valores .tercerValor {
       display: flex;
@@ -182,10 +209,13 @@ body {
         height: 28px; }
 
 .footer {
-  background-color: #c4c4c4;
+  background-color: #644C39;
   padding: 10px 0px;
   display: grid;
-  grid-template-columns: 1fr 1fr; }
+  grid-template-columns: 1fr 1fr;
+  color: #F8FCFF; }
+  .footer h3, .footer h5 {
+    font-weight: normal; }
   .footer .footer__top {
     margin: 10px 5px; }
     .footer .footer__top .footer__top__img {
@@ -205,6 +235,10 @@ body {
 
 .redes {
   margin: 10px 5px; }
+  .redes h3 {
+    color: #592E0B;
+    font-size: 24px;
+    font-weight: normal; }
   .redes .redes__clientesDicen {
     display: flex;
     justify-content: center;

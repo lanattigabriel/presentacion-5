@@ -30,10 +30,13 @@
         align-self: center;
     }
     .producto__nombre{
+        color: $marronO;
         text-align: center;
+        font-family: 'Playfair Display', serif;
     }
     .producto__caracteristicas,
     .producto__descripcion{
+        font-family: 'Playfair Display', serif;
         font-size: 12px;
         margin: 2px;
         text-align: end;
@@ -41,19 +44,22 @@
 }
 
 .verMas{
-    background-color: #e8e5e5;
+    background-color: $verdeO;
+    font-family: 'Playfair Display', serif;
     margin: 10px 0;
 
     display: flex;
     justify-content: space-between;
     .verMas__titulo{
+        color: white;
         align-self: center;
         margin: 3px 10px;
     }
     .verMas__link{
+        color: white;
+        font-size: 12px;
         text-decoration: none;
         margin: 3px 10px;
-        color: black;
     }
 }
 

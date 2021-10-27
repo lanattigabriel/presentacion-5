@@ -27,7 +27,7 @@ $(".seccionProductos__container").owlCarousel({
             nav: false,
         },
         1200:{
-            items: 7.2,
+            items: 8.5,
             nav: false,
         }
     }

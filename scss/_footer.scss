@@ -1,8 +1,14 @@
 .footer {
-    background-color: #c4c4c4;
+    background-color: $marronF;
+    // font-weight: lighter;
     padding: 10px 0px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    color: $blanco;
+
+    h3, h5{
+        font-weight: normal;
+    }
     
 
     .footer__top {
