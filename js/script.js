@@ -32,3 +32,16 @@ $(".seccionProductos__container").owlCarousel({
         }
     }
 })
+
+// Display de barra de navegación para versión mobile
+const navBar = document.getElementsByClassName("nav")[0];
+
+window.addEventListener('scroll', () =>{
+    const scrolled = window.scrollY;
+
+    if(scrolled >= 668){
+        navBar.classList.remove("displayNone")
+    }else{
+        navBar.classList.add("displayNone");
+    }
+})

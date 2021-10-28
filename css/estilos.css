@@ -93,6 +93,9 @@ body {
   .nav .nav__ul {
     display: none; }
 
+.displayNone {
+  display: none; }
+
 .seccionProductos__container {
   display: flex;
   z-index: 0 !important; }
