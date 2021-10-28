@@ -20,7 +20,8 @@ body {
     margin: 85px auto; }
   .header .header__top .header__top__titulo {
     font-weight: 400;
-    font-size: 24px;
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
     color: #592E0B;
     line-height: 28,13px;
     justify-self: flex-end; }
@@ -32,17 +33,22 @@ body {
   flex-flow: column;
   justify-content: space-between; }
   .header .header__bottom .header__bottom__titulo {
+    font-family: 'Playfair Display', serif;
     color: #592E0B;
     align-self: center;
-    width: 65%;
-    font-size: 18px;
+    width: 75%;
+    font-size: 24px;
     font-weight: 400;
     text-align: center;
     line-height: 21,09px; }
-  .header .header__bottom .header__bottom__texto,
+  .header .header__bottom .header__bottom__texto {
+    color: #592E0B;
+    font-size: 16px;
+    font-weight: bold; }
   .header .header__bottom .header__bottom__puedesVisitarnos {
     color: #592E0B;
-    font-size: 12px;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
     font-weight: 400;
     line-height: 14,06px;
     align-self: left; }
@@ -160,33 +166,38 @@ body {
     .aboutUs .historia h4 {
       color: #592E0B;
       font-size: 24px;
-      font-weight: normal; }
+      font-weight: normal;
+      font-family: 'Playfair Display', serif; }
     .aboutUs .historia p {
       padding: 5px 0px;
       margin: 5px 0px;
       text-align: center;
-      font-size: 18px; }
+      font-size: 16px; }
   .aboutUs .aboutUno {
     margin: 35px 5px;
     display: flex; }
     .aboutUs .aboutUno .mision h4 {
       color: #592E0B;
+      font-family: 'Playfair Display', serif;
       font-size: 24px;
-      font-weight: normal; }
+      font-weight: normal;
+      text-align: center; }
     .aboutUs .aboutUno .mision p {
       padding: 5px 0px;
-      text-align: center, justify;
-      font-size: 18px; }
+      text-align: center;
+      font-size: 16px; }
     .aboutUs .aboutUno .vision {
       margin-left: 18px; }
       .aboutUs .aboutUno .vision h4 {
         color: #592E0B;
+        font-family: 'Playfair Display', serif;
         font-size: 24px;
-        font-weight: normal; }
+        font-weight: normal;
+        text-align: center; }
       .aboutUs .aboutUno .vision p {
         padding: 5px 0px;
-        text-align: center, justify;
-        font-size: 18px; }
+        text-align: center;
+        font-size: 16px; }
   .aboutUs .valores {
     margin: 40px 5px;
     font-size: 18px; }
@@ -195,18 +206,21 @@ body {
       font-size: 24px;
       font-weight: normal;
       padding: 5px 0px; }
-    .aboutUs .valores .primerValor, .aboutUs .valores .segundoValor, .aboutUs .valores .tercerValor {
+    .aboutUs .valores .valores__subtitulo {
+      font-size: 12px;
+      text-align: center;
+      text-justify: center;
+      margin: 5px;
+      max-width: 95%; }
+    .aboutUs .valores .valores__ul {
       display: flex;
-      justify-content: center;
-      margin: 10px 0px;
-      padding: 5px 0px; }
-      .aboutUs .valores .primerValor img, .aboutUs .valores .segundoValor img, .aboutUs .valores .tercerValor img {
-        width: 50px;
-        height: 50px;
-        border-radius: 50px; }
-      .aboutUs .valores .primerValor p, .aboutUs .valores .segundoValor p, .aboutUs .valores .tercerValor p {
-        margin-left: 15px;
-        height: 28px; }
+      flex-direction: column;
+      margin: 20px; }
+      .aboutUs .valores .valores__ul .valores__ul__li {
+        list-style: none; }
+        .aboutUs .valores .valores__ul .valores__ul__li .valores__ul__li__items {
+          margin: 5px;
+          font-size: 12px; }
 
 .footer {
   background-color: #644C39;

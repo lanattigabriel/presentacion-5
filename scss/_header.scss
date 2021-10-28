@@ -14,7 +14,8 @@
         }
         .header__top__titulo{
             font-weight: 400;
-            font-size: 24px;
+            font-family: 'Playfair Display', serif;
+            font-size: 40px;
             color: $marronO;
             line-height: 28,13px;
             justify-self: flex-end;
@@ -25,21 +26,26 @@
         padding: 20px;
         display: flex;
         flex-flow: column;
-        // align-items: center;
         justify-content: space-between;
         .header__bottom__titulo{
+            font-family: 'Playfair Display', serif;
             color: $marronO;
             align-self: center;
-            width: 65%;
-            font-size: 18px;
+            width: 75%;
+            font-size: 24px;
             font-weight: 400;
             text-align: center;
             line-height: 21,09px;
         }
-        .header__bottom__texto,
+        .header__bottom__texto{
+            color: $marronO;
+            font-size: 16px;
+            font-weight: bold;
+        }
         .header__bottom__puedesVisitarnos{
             color: $marronO;
-            font-size: 12px;
+            font-family: 'Playfair Display', serif;
+            font-size: 20px;
             font-weight: 400;
             line-height: 14,06px;
             align-self: left;
