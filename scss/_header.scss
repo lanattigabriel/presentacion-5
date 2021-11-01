@@ -52,11 +52,13 @@
         }
         .header__bottom__ul{
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
             .header__bottom__ul__li{
                 list-style: none;
                     .header__bottom__ul__li__a__i{
+                        margin: 10px;
                         font-size: 50px;
+                        color: $marronO;
                     }
             }
         }

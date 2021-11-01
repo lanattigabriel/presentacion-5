@@ -5,7 +5,6 @@
 }
 
 .producto{
-    border: 1px solid black;
     margin: 10px;
     padding: 6px 8px;
     height: 230px;
@@ -24,7 +23,6 @@
         margin: 3px;
         
         background-color: #e8e5e5;
-        border: 1px solid black;
         border-radius: 8px;
 
         align-self: center;
@@ -32,32 +30,29 @@
     .producto__nombre{
         color: $marronO;
         text-align: center;
-        font-family: 'Playfair Display', serif;
-    }
-    .producto__caracteristicas,
-    .producto__descripcion{
-        font-family: 'Playfair Display', serif;
-        font-size: 12px;
-        margin: 2px;
-        text-align: end;
+        align-self: center;
+        font-weight: 700;
+        margin-bottom: 20px;
+        margin-top: 0;
     }
 }
 
 .verMas{
     background-color: $verdeO;
-    font-family: 'Playfair Display', serif;
     margin: 10px 0;
 
     display: flex;
     justify-content: space-between;
     .verMas__titulo{
+        font-family: 'Playfair Display', serif;
         color: white;
         align-self: center;
         margin: 3px 10px;
     }
     .verMas__link{
         color: white;
-        font-size: 12px;
+        font-size: 16px;
+        font-weight: 700;
         text-decoration: none;
         margin: 3px 10px;
     }
@@ -65,15 +60,13 @@
 
 .tiendaOnline{
     display: flex;
-    justify-content: space-around;
     .tiendaOnline__texto{
         align-self: center;
     }
     .tiendaOnline__img{
-        width: 50px;
-        height: 50px;
-        border: 1px solid black;
-        border-radius: 50%;
+        margin: 20px;
+        font-size: 40px;
+        color: $marronO;
     }
 
 }

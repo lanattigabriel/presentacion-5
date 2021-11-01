@@ -1,35 +1,39 @@
 .redes {
-    margin: 10px 5px;
+    margin: 30px 5px;
 
     
     h3 {
         color: $marronO;
         font-size: 24px;
         font-weight: normal;
+        font-family: 'Playfair Display', serif;
+        margin-bottom: 20px;
+    }
+
+    .owl-carousel{
+        z-index: 0;
+    }
+
+
+    .owl-stage{
+        width: 344px;
+        height: 260px;
     }
     
+    .owl-item{
+        width: 343px;
+        height: 252px;
+        padding: 50px 30px;
+        text-align: center;
+        background-color: $gris;
+        box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
 
-    .redes__clientesDicen {
         display: flex;
-        justify-content: center;
         align-items: center;
-        margin-bottom: 180px;
-
-            
-            .classP {
-                display: none;
-            }
-
-            p{
-                margin: 15px 5px;
-                text-align: center, justify;
-                height: 56px;
-                font-size: 18px;
-            }
     }
 
     .redes__iconos {
-        //margin: 5px 10px;
         padding: 20px;
 
         h3 {
@@ -39,14 +43,17 @@
         ul {
             list-style: none;
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
             font-size: 50px;
             
             li {
                 
                 a {
-                    text-decoration: none;    
+                    text-decoration: none;
+                    margin: 10px;
+                    font-size: 50px;
+                    color: $marronO;    
                 }
 
             }

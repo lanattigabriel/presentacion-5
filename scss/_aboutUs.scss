@@ -4,102 +4,40 @@
 
 
     img {
-        background-color: dimgrey;
+        background-color: #c4c4c4;
         width: 100%;
         height: 100px;
     }
 
-    .historia {
-        margin: 30px 5px;
-            h4 {
-                color: $marronO;
-                font-size: 24px;
-                font-weight: normal;
-                font-family: 'Playfair Display', serif;
-            }
-
-            p {
-                padding: 5px 0px;
-                margin: 5px 0px;
-                text-align: center;
-                font-size: 16px;
-            }
-    }
-
-    .aboutUno {
-        margin: 35px 5px;
-        display: flex;
-
-        .mision {
-            h4 {
-                color: $marronO;
-                font-family: 'Playfair Display', serif;
-                font-size: 24px;
-                font-weight: normal;
-                text-align: center;
-            }
-            
-            p {
-                padding: 5px 0px;
-                text-align: center;
-                font-size: 16px;
-            }
-
-        }
-
-        .vision {
-            margin-left: 18px;
-            h4 {
-                color: $marronO;
-                font-family: 'Playfair Display', serif;
-                font-size: 24px;
-                font-weight: normal;
-                text-align: center;
-            }
-
-            p {
-                padding: 5px 0px;
-                
-                text-align: center;
-                font-size: 16px;
-            }
-        }
-    }
-
-
-    .valores{
-        margin: 40px 5px;
-        font-size: 18px;
-
-        h4 {
+    .aboutInnerContainer{
+        margin: 16px;
+        max-width: 100vw;
+        h4{
             color: $marronO;
             font-size: 24px;
             font-weight: normal;
+            font-family: 'Playfair Display', serif;  
+        }
+
+        p{
             padding: 5px 0px;
-        }
-
-        .valores__subtitulo{
-            font-size: 12px;
+            margin: 5px 0px;
             text-align: center;
-            text-justify: center;
-            margin: 5px;
-            max-width: 95%;
+            font-size: 16px;
+            font-weight: 400;
         }
+    }
 
-        .valores__ul {
-            display: flex;
-            flex-direction: column;
-            margin: 20px;
-            .valores__ul__li{
-                list-style: none;
-                .valores__ul__li__items{
-                 margin: 5px;
-                 font-size: 12px;   
-                }
+    .valores__ul {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        .valores__ul__li{
+            list-style: none;
+            text-align: left;
+            .valores__ul__li__items{
+                text-align: left;
             }
         }
-
-
     }
 
 }

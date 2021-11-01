@@ -45,3 +45,21 @@ window.addEventListener('scroll', () =>{
         navBar.classList.add("displayNone");
     }
 })
+
+$(".redes__clientesDicen").owlCarousel({ 
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 5000,
+    autoplayHoverPause: true,
+    margin: 100,
+    responsive: {
+        0:{
+            items: 1,
+            nav: false,
+        },
+        1200:{
+            items: 3,
+            nav: false,
+        }
+    }
+})
