@@ -1,4 +1,18 @@
 
+
+$(".header__top__container").owlCarousel({
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 2000,
+    autoplayHoverPause: true,
+    responsive: {
+        0:{
+            items: 1,
+            nav: false,
+        }
+    }
+})
+
 $(".seccionProductos__container").owlCarousel({
     margin: 10,
     loop: true,

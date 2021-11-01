@@ -1,26 +1,53 @@
 .header{
     .header__top{
-        background-color: #c4c4c4;
-        height: 330px;
-        display: flex;
-        flex-flow: column;
-        align-items: center;
-        justify-content: center;
-        .header__top__logo{
-            border: 1px solid black;
+        height: 310px;
+        z-index: 0;
+        opacity: 0.99;
+    }
+    
+    .header__top__1{
+        background: url("../imagenes/pequenias/1.png") center;
+    }
+    .header__top__2{
+        background: url("../imagenes/pequenias/2.png") center;
+    }
+    .header__top__3{
+        background: url("../imagenes/pequenias/3.png") center;
+    }
+    .header__top__4{
+        background: url("../imagenes/pequenias/4.png") center;
+    }
+    .header__top__5{
+        background: url("../imagenes/pequenias/5.png") center;
+    }
+    .header__top__6{
+        background: url("../imagenes/pequenias/6.png") center;
+    }
+
+    .headerLogoContainer{
+        position: absolute;
+        top: 120px;
+        margin-left: 10px;
+        
+        .headerLogo{
             width: 100px;
             height: 100px;
-            margin: 85px auto;
+            background-color: #a7a3a3;
+            margin-left: 10px;
         }
-        .header__top__titulo{
+        .headerTitulo{
             font-weight: 400;
             font-family: 'Playfair Display', serif;
-            font-size: 40px;
+            font-size: 24px;
+            width: 112px;
+            // height: 57px;
+            padding-top: 10px;
+            padding-left: 10px;
             color: $marronO;
-            line-height: 28,13px;
             justify-self: flex-end;
         }
     }
+
     .header__bottom{
         height: 330px;
         padding: 20px;

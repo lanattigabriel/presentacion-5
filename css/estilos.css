@@ -7,23 +7,45 @@ body {
   font-family: 'Roboto', sans-serif; }
 
 .header .header__top {
-  background-color: #c4c4c4;
-  height: 330px;
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  justify-content: center; }
-  .header .header__top .header__top__logo {
-    border: 1px solid black;
+  height: 310px;
+  z-index: 0;
+  opacity: 0.99; }
+
+.header .header__top__1 {
+  background: url("../imagenes/pequenias/1.png") center; }
+
+.header .header__top__2 {
+  background: url("../imagenes/pequenias/2.png") center; }
+
+.header .header__top__3 {
+  background: url("../imagenes/pequenias/3.png") center; }
+
+.header .header__top__4 {
+  background: url("../imagenes/pequenias/4.png") center; }
+
+.header .header__top__5 {
+  background: url("../imagenes/pequenias/5.png") center; }
+
+.header .header__top__6 {
+  background: url("../imagenes/pequenias/6.png") center; }
+
+.header .headerLogoContainer {
+  position: absolute;
+  top: 120px;
+  margin-left: 10px; }
+  .header .headerLogoContainer .headerLogo {
     width: 100px;
     height: 100px;
-    margin: 85px auto; }
-  .header .header__top .header__top__titulo {
+    background-color: #a7a3a3;
+    margin-left: 10px; }
+  .header .headerLogoContainer .headerTitulo {
     font-weight: 400;
     font-family: 'Playfair Display', serif;
-    font-size: 40px;
+    font-size: 24px;
+    width: 112px;
+    padding-top: 10px;
+    padding-left: 10px;
     color: #592E0B;
-    line-height: 28,13px;
     justify-self: flex-end; }
 
 .header .header__bottom {
