@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -6,28 +7,29 @@
 body {
   font-family: 'Roboto', sans-serif; }
 
+/* Header */
 .header .header__top {
   height: 310px;
   z-index: 0;
   opacity: 0.99; }
 
 .header .header__top__1 {
-  background: url("../imagenes/pequenias/1.png") center; }
+  background: url("../imagenes/pequenias/1.png") no-repeat center center/cover; }
 
 .header .header__top__2 {
-  background: url("../imagenes/pequenias/2.png") center; }
+  background: url("../imagenes/pequenias/2.png") no-repeat center center/cover; }
 
 .header .header__top__3 {
-  background: url("../imagenes/pequenias/3.png") center; }
+  background: url("../imagenes/pequenias/3.png") no-repeat center center/cover; }
 
 .header .header__top__4 {
-  background: url("../imagenes/pequenias/4.png") center; }
+  background: url("../imagenes/pequenias/4.png") no-repeat center center/cover; }
 
 .header .header__top__5 {
-  background: url("../imagenes/pequenias/5.png") center; }
+  background: url("../imagenes/pequenias/5.png") no-repeat center center/cover; }
 
 .header .header__top__6 {
-  background: url("../imagenes/pequenias/6.png") center; }
+  background: url("../imagenes/pequenias/6.png") no-repeat center center/cover; }
 
 .header .headerLogoContainer {
   position: absolute;
@@ -58,7 +60,7 @@ body {
     font-family: 'Playfair Display', serif;
     color: #592E0B;
     align-self: center;
-    width: 75%;
+    width: 270px;
     font-size: 24px;
     font-weight: 400;
     text-align: center;
@@ -77,13 +79,14 @@ body {
   .header .header__bottom .header__bottom__ul {
     display: flex;
     justify-content: center; }
-    .header .header__bottom .header__bottom__ul .header__bottom__ul__li {
+    .header .header__bottom .header__bottom__ul .header__bottom__li {
       list-style: none; }
-      .header .header__bottom .header__bottom__ul .header__bottom__ul__li .header__bottom__ul__li__a__i {
+      .header .header__bottom .header__bottom__ul .header__bottom__li .header__bottom__i {
         margin: 10px;
         font-size: 50px;
         color: #592E0B; }
 
+/* Navegación */
 .nav {
   display: flex;
   flex-flow: row nowrap;
@@ -104,23 +107,40 @@ body {
       height: 50px;
       background-color: #e8e5e5; }
     .nav .nav__logo .nav__logo__titulo {
-      color: white;
+      color: #F8FCFF;
       font-size: 24px;
       font-weight: 400;
       font-family: 'Playfair Display', serif;
       margin: 9px; }
   .nav .nav__bars {
     font-size: 20px;
-    color: white;
+    color: #F8FCFF;
     align-self: center;
     margin-right: 30px;
     cursor: pointer; }
   .nav .nav__ul {
-    display: none; }
+    display: flex;
+    flex-direction: row; }
+    .nav .nav__ul .nav__li {
+      display: flex;
+      justify-content: space-between;
+      list-style: none; }
+      .nav .nav__ul .nav__li .nav__a {
+        text-decoration: none;
+        font-size: 20px;
+        font-family: 'Playfair Display', serif;
+        margin: auto 30px;
+        padding: auto 30px;
+        color: #F8FCFF; }
+
+.displayNoneNav {
+  display: none; }
 
 .displayNone {
   display: none; }
 
+/* Media Queries Navegación */
+/* Productos */
 .seccionProductos__container {
   display: flex;
   z-index: 0 !important; }
@@ -177,10 +197,11 @@ body {
     font-size: 40px;
     color: #592E0B; }
 
+/* About Us */
 .aboutUs {
   margin: 15px 0px; }
-  .aboutUs img {
-    background-color: #c4c4c4;
+  .aboutUs .imagenHistoria {
+    background: url("../imagenes/IMG_5793.JPG") no-repeat center/cover;
     width: 100%;
     height: 100px; }
   .aboutUs .aboutInnerContainer {
@@ -206,6 +227,7 @@ body {
       .aboutUs .valores__ul .valores__ul__li .valores__ul__li__items {
         text-align: left; }
 
+/* Footer */
 .footer {
   background-color: #644C39;
   padding: 10px 0px;
@@ -231,6 +253,7 @@ body {
       text-align: right;
       font-size: 18px; }
 
+/* Redes */
 .redes {
   margin: 30px 5px; }
   .redes h3 {

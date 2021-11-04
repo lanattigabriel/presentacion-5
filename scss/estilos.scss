@@ -1,9 +1,14 @@
+// Colores
 $marronO: #592E0B;
 $marronC: #786855;
 $marronF: #644C39;
 $verdeO: #7C8278;
 $blanco: #F8FCFF;
 $gris: #F1F0F7;
+
+// Media Queries
+$smartphone: "(max-width: 375px)";
+$desktop: "(min-width: 785px)";
 
 *{
     margin: 0;

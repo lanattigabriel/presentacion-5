@@ -1,3 +1,5 @@
+/* Header */
+
 .header{
     .header__top{
         height: 310px;
@@ -6,22 +8,22 @@
     }
     
     .header__top__1{
-        background: url("../imagenes/pequenias/1.png") center;
+        background: url("../imagenes/pequenias/1.png") no-repeat center center/cover;
     }
     .header__top__2{
-        background: url("../imagenes/pequenias/2.png") center;
+        background: url("../imagenes/pequenias/2.png") no-repeat center center/cover;
     }
     .header__top__3{
-        background: url("../imagenes/pequenias/3.png") center;
+        background: url("../imagenes/pequenias/3.png") no-repeat center center/cover;
     }
     .header__top__4{
-        background: url("../imagenes/pequenias/4.png") center;
+        background: url("../imagenes/pequenias/4.png") no-repeat center center/cover;
     }
     .header__top__5{
-        background: url("../imagenes/pequenias/5.png") center;
+        background: url("../imagenes/pequenias/5.png") no-repeat center center/cover;
     }
     .header__top__6{
-        background: url("../imagenes/pequenias/6.png") center;
+        background: url("../imagenes/pequenias/6.png") no-repeat center center/cover;
     }
 
     .headerLogoContainer{
@@ -40,7 +42,6 @@
             font-family: 'Playfair Display', serif;
             font-size: 24px;
             width: 112px;
-            // height: 57px;
             padding-top: 10px;
             padding-left: 10px;
             color: $marronO;
@@ -58,7 +59,7 @@
             font-family: 'Playfair Display', serif;
             color: $marronO;
             align-self: center;
-            width: 75%;
+            width: 270px;
             font-size: 24px;
             font-weight: 400;
             text-align: center;
@@ -80,9 +81,9 @@
         .header__bottom__ul{
             display: flex;
             justify-content: center;
-            .header__bottom__ul__li{
+            .header__bottom__li{
                 list-style: none;
-                    .header__bottom__ul__li__a__i{
+                    .header__bottom__i{
                         margin: 10px;
                         font-size: 50px;
                         color: $marronO;
