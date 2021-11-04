@@ -68,7 +68,6 @@ window.addEventListener('scroll', () =>{
 const navItem = document.getElementsByClassName("nav__a")
 window.addEventListener('scroll', () => {
     const scrolled = parseInt(window.scrollY);
-    console.log(scrolled)
 
     if((scrolled >= 668) && (scrolled < 1990)){
         navItem[1].classList.remove("displayNone")
