@@ -63,3 +63,29 @@
     }
 
 }
+
+/* Media Queries Redes */
+
+// @media (max-width: 899px) {
+//     .displayRedes {
+//         display: none;
+//     }   
+// }
+
+@media (min-width: 900px){
+    .redes{
+
+        .redes__iconos{
+            ul{
+                list-style: none;
+                display: flex;
+                justify-content: flex-start;
+                i{
+                    font-size: 80px;
+                    margin: 40px;
+                }
+            }
+    
+        }
+    }
+}

@@ -46,14 +46,13 @@
     justify-content: space-between;
     .verMas__titulo{
         font-family: 'Playfair Display', serif;
-        color: white;
+        color: $blanco;
         align-self: center;
         margin: 3px 10px;
     }
     .verMas__link{
-        color: white;
+        color: $blanco;
         font-size: 16px;
-        font-weight: 700;
         text-decoration: none;
         margin: 3px 10px;
     }
@@ -70,4 +69,18 @@
         color: $marronO;
     }
 
+}
+
+/* Media Queries Productos */
+
+@media (min-width: 785px) {
+    .verMas{
+        justify-content: flex-start;
+        .verMas__titulo{
+            margin-left: 50px;
+        }
+        .verMas__link{
+            margin-left: 150px;
+        }
+    }
 }

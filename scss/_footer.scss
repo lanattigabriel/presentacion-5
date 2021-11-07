@@ -2,46 +2,197 @@
 
 .footer {
     background-color: $marronF;
-    // font-weight: lighter;
-    padding: 10px 0px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: block;
+    padding: 10px 15px;
+    height: 267px;
     color: $blanco;
 
-    h3, h5{
-        font-weight: normal;
+    @media (min-width: 900px) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 170px;
+        
     }
-    
+
+        @media (min-width: 1200px) {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 216px;
+            
+        }
 
     .footer__top {
-        margin: 10px 5px;
+        display: flex;
+        justify-content: space-between;
+
+            @media (min-width: 1200px) {
+            display: flex;
+            align-items: center; 
+            }
 
         .footer__top__img { 
             background-color: darkgrey;
+            margin-bottom: 10px;
             width: 100px;
             height: 100px;
+
+            @media (min-width: 900px) {
+                height: 170px;
+                width: 170px; 
+                margin: 0px 10px;                 
+             }
+
+             @media (min-width: 1200px) {
+                height: 216px;
+                width: 216px; 
+                margin: 0px 15px;                 
+             }
+
         }
 
-        //.footer__bottom__contacto {
-            
-        //}
+        .footer__top__titulo {
+           text-align: right;
+           
+           h3 {
+               font-size: 32px;
+               font-weight: normal;
+           }
 
+           p {
+               font-size: 20px;
+               margin-top: 5px;
+           }
+            
+           @media (min-width: 900px) {
+            text-align: left;
+            
+            h3 {
+                font-size: 36px;
+                font-weight: normal;
+            }
+ 
+            p {
+                font-size: 20px;
+                width: 248px;
+            }
+    }
+                @media (min-width: 1200px) {
+                        text-align: left;
+                        
+                        h3 {
+                            font-size: 42px;
+                        }
+             
+                        p {
+                            font-size: 24px;
+                        }
+                }
+
+        }  
+         
     }
 
     .footer__bottom {
-        margin: 10px 5px;
-    
-        .footer__top__titulo {
-            text-align: right;
-            font-size: 18px;
-            margin-bottom: 15px;
-        }
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-between;
+        width: 100%;
+        
+            @media (min-width: 1200px) {
+                height: 170px;
+            }
 
+        .footer__bottom__contacto {
+            font-size: 16px;
+            
+            h5 {
+                font-size: 20px;
+                font-weight: normal;
+            }
+            
+            p {
+                font-size: 16px;
+            }
+
+            @media (min-width: 900px) {
+                height: 170px;
+                margin-top: 30px;
+                margin-left: 100px;
+
+                h5 {
+                    font-size: 20px;
+                }
+                
+                p {
+                    font-size: 10px;
+                }
+
+            }
+
+            @media (min-width: 1200px) {
+                height: 216px;
+                margin-top: 30px;
+                margin-left: 150px;
+
+                h5 {
+                    font-size: 24px;
+                }
+                
+                p {
+                    font-size: 12px;
+                }
+                        
+            }
+               
+       }
         
         .footer__bottom__disenio {
-            margin-top: 38px;
-            text-align: right;
-            font-size: 18px;
+            margin-top: 1px;
+            font-size: 16px;
+
+            h5 {
+                font-size: 20px;
+                font-weight: normal;
+            }
+            
+            p {
+                font-size: 16px;
+            }
+
+            @media (min-width: 900px) {
+                height: 170px;
+                margin-top: 30px;
+                margin-left: 100px;
+                text-align: left;
+
+                h5 {
+                    font-size: 20px;
+                }
+                
+                p {
+                    font-size: 10px;
+                }
+        
+            }
+
+            @media (min-width: 1200px) {
+                height: 170px;
+                margin-top: 30px;
+                margin-left: 160px;
+                text-align: left;
+
+                h5 {
+                    font-size: 24px;
+                }
+                
+                p {
+                    font-size: 12px;
+                }
+                        
+            }
+  
         }
     }
 }

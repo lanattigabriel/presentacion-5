@@ -3,17 +3,17 @@
 .aboutUs {
     margin: 15px 0px;
 
-
     .imagenHistoria {
         background: url("../imagenes/IMG_5793.JPG") no-repeat center/cover;
         width: 100%;
         height: 100px;
-
     }
+    
 
     .aboutInnerContainer{
         margin: 16px;
         max-width: 100vw;
+
         h4{
             color: $marronO;
             font-size: 24px;
@@ -28,18 +28,64 @@
             font-size: 16px;
             font-weight: 400;
         }
+        
     }
 
     .valores__ul {
-        display: grid;
-        grid-template-columns: 50% 50%;
+    margin-top: 25px;
+    display: block;
         .valores__ul__li{
             list-style: none;
-            text-align: left;
+            
             .valores__ul__li__items{
                 text-align: left;
+            font-size: 16px;
             }
         }
     }
+}
 
+/* Media Queries About Us */
+
+@media (max-width: 1115px) {
+    .displayAbout {
+        display: none;
+    }   
+}
+
+.aboutUs{
+    .imagenHistoria{
+        @media (min-width: 1116px) {
+            width: 680px;    
+            height: 595px;
+
+            .imgAbout {
+                width: 250px;
+                height: 250px;
+                background-color: #a7a3a3;
+                opacity: 0.4;
+                margin-top: 345px;
+                
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .responsiveAbout {
+        display: flex; 
+        flex-direction: row-reverse; 
+        justify-content: space-between;
+    }
+
+    .aboutInnerContainer{
+            // margin: 200px;
+            padding: 10px;
+
+            .parrafoResponsive {
+                width: 650px;
+                height: 38px;
+                
+            } 
+    }
 }

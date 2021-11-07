@@ -86,6 +86,107 @@ body {
         font-size: 50px;
         color: #592E0B; }
 
+/* Media Queries Header */
+@media (min-width: 900px) {
+  .header .header__top {
+    height: 469px; } }
+
+@media (min-width: 1440px) {
+  .header .header__top {
+    height: 569px; } }
+
+@media (min-width: 1200px) {
+  .header .header__top__1 {
+    background: url(../imagenes/grandes/1.png) no-repeat center center/cover; } }
+
+@media (min-width: 1200px) {
+  .header .header__top__2 {
+    background: url(../imagenes/grandes/IMG_0974.png) no-repeat center center/cover; } }
+
+@media (min-width: 1200px) {
+  .header .header__top__3 {
+    background: url(../imagenes/grandes/IMG_0975.png) no-repeat center center/cover; } }
+
+@media (min-width: 1200px) {
+  .header .header__top__4 {
+    background: url(../imagenes/grandes/IMG_0979.png) no-repeat center center/cover; } }
+
+@media (min-width: 1200px) {
+  .header .header__top__5 {
+    background: url(../imagenes/grandes/IMG_5792.png) no-repeat center center/cover; } }
+
+@media (min-width: 1200px) {
+  .header .header__top__6 {
+    background: url(../imagenes/grandes/IMG_5794.png) no-repeat center center/cover; } }
+
+@media (min-width: 900px) {
+  .header .headerLogoContainer .headerLogo {
+    width: 150px;
+    height: 150px;
+    margin-left: 100px;
+    margin-top: 100px; } }
+
+@media (min-width: 1440px) {
+  .header .headerLogoContainer .headerLogo {
+    width: 200px;
+    height: 200px;
+    margin-left: 100px;
+    margin-top: 100px; } }
+
+@media (min-width: 900px) {
+  .header .headerLogoContainer .headerTitulo {
+    width: 367px;
+    height: 53px;
+    font-size: 30px;
+    margin-left: 60px; } }
+
+@media (min-width: 1440px) {
+  .header .headerLogoContainer .headerTitulo {
+    width: 487px;
+    height: 53px;
+    font-size: 40px;
+    margin-left: 60px; } }
+
+@media (min-width: 900px) {
+  .header .header__bottom .header__bottom__titulo {
+    font-size: 28px;
+    height: 86px;
+    width: 360px; } }
+
+@media (min-width: 1440px) {
+  .header .header__bottom .header__bottom__titulo {
+    font-size: 36px;
+    height: 86px;
+    width: 400px; } }
+
+@media (min-width: 900px) {
+  .header .header__bottom .header__bottom__texto {
+    display: none; } }
+
+@media (min-width: 900px) {
+  .header .header__bottom .header__bottom__puedesVisitarnos {
+    color: #592E0B;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 14,06px;
+    text-align: center;
+    margin-top: 100px; } }
+
+@media (max-width: 899px) {
+  .header .header__bottom .header__bottom__puedesVisitarnos {
+    display: none; } }
+
+@media (min-width: 900px) {
+  .header .header__bottom .header__bottom__ul .header__bottom__li .header__bottom__a .header__bottom__i {
+    margin: 15px 30px;
+    font-size: 50px; } }
+
+@media (min-width: 1200px) {
+  .header .header__bottom .header__bottom__ul .header__bottom__li .header__bottom__a .header__bottom__i {
+    margin: 15px 30px;
+    font-size: 50px; } }
+
 /* Navegación */
 .nav {
   display: flex;
@@ -140,6 +241,21 @@ body {
   display: none; }
 
 /* Media Queries Navegación */
+@media (min-width: 785px) {
+  .nav {
+    height: 144px; }
+    .nav .nav__logo .nav__logo__img {
+      width: 132px;
+      height: 132px; }
+    .nav .nav__logo .nav__logo__titulo {
+      display: inline-block;
+      width: 112px;
+      margin: 24px; }
+    .nav .nav__bars {
+      display: none; }
+    .nav .nav__ul .nav__li .nav__a {
+      font-size: 32px; } }
+
 /* Productos */
 .seccionProductos__container {
   display: flex;
@@ -178,13 +294,12 @@ body {
   justify-content: space-between; }
   .verMas .verMas__titulo {
     font-family: 'Playfair Display', serif;
-    color: white;
+    color: #F8FCFF;
     align-self: center;
     margin: 3px 10px; }
   .verMas .verMas__link {
-    color: white;
+    color: #F8FCFF;
     font-size: 16px;
-    font-weight: 700;
     text-decoration: none;
     margin: 3px 10px; }
 
@@ -196,6 +311,15 @@ body {
     margin: 20px;
     font-size: 40px;
     color: #592E0B; }
+
+/* Media Queries Productos */
+@media (min-width: 785px) {
+  .verMas {
+    justify-content: flex-start; }
+    .verMas .verMas__titulo {
+      margin-left: 50px; }
+    .verMas .verMas__link {
+      margin-left: 150px; } }
 
 /* About Us */
 .aboutUs {
@@ -219,39 +343,167 @@ body {
       font-size: 16px;
       font-weight: 400; }
   .aboutUs .valores__ul {
-    display: grid;
-    grid-template-columns: 50% 50%; }
+    margin-top: 25px;
+    display: block; }
     .aboutUs .valores__ul .valores__ul__li {
-      list-style: none;
-      text-align: left; }
+      list-style: none; }
       .aboutUs .valores__ul .valores__ul__li .valores__ul__li__items {
-        text-align: left; }
+        text-align: left;
+        font-size: 16px; }
+
+/* Media Queries About Us */
+@media (max-width: 1115px) {
+  .displayAbout {
+    display: none; } }
+
+@media (min-width: 1116px) {
+  .aboutUs .imagenHistoria {
+    width: 680px;
+    height: 595px; }
+    .aboutUs .imagenHistoria .imgAbout {
+      width: 250px;
+      height: 250px;
+      background-color: #a7a3a3;
+      opacity: 0.4;
+      margin-top: 345px; } }
+
+@media (min-width: 1200px) {
+  .responsiveAbout {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between; }
+  .aboutInnerContainer {
+    padding: 10px; }
+    .aboutInnerContainer .parrafoResponsive {
+      width: 650px;
+      height: 38px; } }
 
 /* Footer */
 .footer {
   background-color: #644C39;
-  padding: 10px 0px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: block;
+  padding: 10px 15px;
+  height: 267px;
   color: #F8FCFF; }
-  .footer h3, .footer h5 {
-    font-weight: normal; }
+  @media (min-width: 900px) {
+    .footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 170px; } }
+  @media (min-width: 1200px) {
+    .footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 216px; } }
   .footer .footer__top {
-    margin: 10px 5px; }
+    display: flex;
+    justify-content: space-between; }
+    @media (min-width: 1200px) {
+      .footer .footer__top {
+        display: flex;
+        align-items: center; } }
     .footer .footer__top .footer__top__img {
       background-color: darkgrey;
+      margin-bottom: 10px;
       width: 100px;
       height: 100px; }
+      @media (min-width: 900px) {
+        .footer .footer__top .footer__top__img {
+          height: 170px;
+          width: 170px;
+          margin: 0px 10px; } }
+      @media (min-width: 1200px) {
+        .footer .footer__top .footer__top__img {
+          height: 216px;
+          width: 216px;
+          margin: 0px 15px; } }
+    .footer .footer__top .footer__top__titulo {
+      text-align: right; }
+      .footer .footer__top .footer__top__titulo h3 {
+        font-size: 32px;
+        font-weight: normal; }
+      .footer .footer__top .footer__top__titulo p {
+        font-size: 20px;
+        margin-top: 5px; }
+      @media (min-width: 900px) {
+        .footer .footer__top .footer__top__titulo {
+          text-align: left; }
+          .footer .footer__top .footer__top__titulo h3 {
+            font-size: 36px;
+            font-weight: normal; }
+          .footer .footer__top .footer__top__titulo p {
+            font-size: 20px;
+            width: 248px; } }
+      @media (min-width: 1200px) {
+        .footer .footer__top .footer__top__titulo {
+          text-align: left; }
+          .footer .footer__top .footer__top__titulo h3 {
+            font-size: 42px; }
+          .footer .footer__top .footer__top__titulo p {
+            font-size: 24px; } }
   .footer .footer__bottom {
-    margin: 10px 5px; }
-    .footer .footer__bottom .footer__top__titulo {
-      text-align: right;
-      font-size: 18px;
-      margin-bottom: 15px; }
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    width: 100%; }
+    @media (min-width: 1200px) {
+      .footer .footer__bottom {
+        height: 170px; } }
+    .footer .footer__bottom .footer__bottom__contacto {
+      font-size: 16px; }
+      .footer .footer__bottom .footer__bottom__contacto h5 {
+        font-size: 20px;
+        font-weight: normal; }
+      .footer .footer__bottom .footer__bottom__contacto p {
+        font-size: 16px; }
+      @media (min-width: 900px) {
+        .footer .footer__bottom .footer__bottom__contacto {
+          height: 170px;
+          margin-top: 30px;
+          margin-left: 100px; }
+          .footer .footer__bottom .footer__bottom__contacto h5 {
+            font-size: 20px; }
+          .footer .footer__bottom .footer__bottom__contacto p {
+            font-size: 10px; } }
+      @media (min-width: 1200px) {
+        .footer .footer__bottom .footer__bottom__contacto {
+          height: 216px;
+          margin-top: 30px;
+          margin-left: 150px; }
+          .footer .footer__bottom .footer__bottom__contacto h5 {
+            font-size: 24px; }
+          .footer .footer__bottom .footer__bottom__contacto p {
+            font-size: 12px; } }
     .footer .footer__bottom .footer__bottom__disenio {
-      margin-top: 38px;
-      text-align: right;
-      font-size: 18px; }
+      margin-top: 1px;
+      font-size: 16px; }
+      .footer .footer__bottom .footer__bottom__disenio h5 {
+        font-size: 20px;
+        font-weight: normal; }
+      .footer .footer__bottom .footer__bottom__disenio p {
+        font-size: 16px; }
+      @media (min-width: 900px) {
+        .footer .footer__bottom .footer__bottom__disenio {
+          height: 170px;
+          margin-top: 30px;
+          margin-left: 100px;
+          text-align: left; }
+          .footer .footer__bottom .footer__bottom__disenio h5 {
+            font-size: 20px; }
+          .footer .footer__bottom .footer__bottom__disenio p {
+            font-size: 10px; } }
+      @media (min-width: 1200px) {
+        .footer .footer__bottom .footer__bottom__disenio {
+          height: 170px;
+          margin-top: 30px;
+          margin-left: 160px;
+          text-align: left; }
+          .footer .footer__bottom .footer__bottom__disenio h5 {
+            font-size: 24px; }
+          .footer .footer__bottom .footer__bottom__disenio p {
+            font-size: 12px; } }
 
 /* Redes */
 .redes {
@@ -292,3 +544,13 @@ body {
         margin: 10px;
         font-size: 50px;
         color: #592E0B; }
+
+/* Media Queries Redes */
+@media (min-width: 900px) {
+  .redes .redes__iconos ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start; }
+    .redes .redes__iconos ul i {
+      font-size: 80px;
+      margin: 40px; } }
