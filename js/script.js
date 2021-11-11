@@ -52,7 +52,16 @@ $(".seccionProductos__container").owlCarousel({
     }
 })
 
-// Display de barra de navegación
+// Display vertical de barra de navegación
+
+const navVertical = document.getElementsByClassName("navVertical")[0];
+const bars = document.getElementsByClassName("nav__bars")[0];
+console.log(navVertical)
+bars.addEventListener("click", () => {
+    navVertical.classList.toggle("navVerticalOn")
+})
+
+// Scroll de barra de navegación
 const navBar = document.getElementsByClassName("nav")[0];
 window.addEventListener('scroll', () =>{
     const scrolled = window.scrollY;
@@ -64,11 +73,12 @@ window.addEventListener('scroll', () =>{
     }
 })
 
-// Display de item de navegación por scroll entre secciones
+// Scroll de items de la barra de navegación
 const navItem = document.getElementsByClassName("nav__a")
 window.addEventListener('scroll', () => {
     const scrolled = parseInt(window.scrollY);
 
+    
     if((scrolled >= 668) && (scrolled < 1990)){
         navItem[1].classList.remove("displayNone")
         navItem[1].innerHTML = `CATÁLOGO`
@@ -76,7 +86,7 @@ window.addEventListener('scroll', () => {
         navItem[1].classList.add("displayNone");
         navItem[1].innerHTML = `Catálogo`
     }
-
+    
     if((scrolled >= 1990) && (scrolled < 3400)){
         navItem[2].classList.remove("displayNone")
         navItem[2].innerHTML = `NOSOTROS`
@@ -84,7 +94,7 @@ window.addEventListener('scroll', () => {
         navItem[2].classList.add("displayNone");
         navItem[2].innerHTML = `Nosotros`
     }
-
+    
     if(scrolled >= 3400){
         navItem[3].classList.remove("displayNone")
         navItem[3].innerHTML = `CONTACTO`
@@ -93,40 +103,46 @@ window.addEventListener('scroll', () => {
         navItem[3].innerHTML = `Contacto`
     }
 
-    // Media Queries de Navegación
+
+    
+// Media Queries de Navegación
     
     if(window.matchMedia("(min-width: 785px)").matches) {
+        
+        navItem[0].innerHTML = `Home`
 
+        
         if(scrolled >= 550){
             navBar.classList.remove("displayNoneNav")
         }else{
             navBar.classList.add("displayNoneNav");
         }
-
-        for (item of navItem)
-        item.classList.remove("displayNone")
-
+        
+        for (item of navItem){
+            item.classList.remove("displayNone")
+        }
+        
         if((scrolled >= 550) && (scrolled < 1900)){
             navItem[1].innerHTML = `CATÁLOGO`
         }else{
             navItem[1].innerHTML = `Catálogo`
         }
-    
+        
         if((scrolled >= 1900) && (scrolled < 2600)){
             navItem[2].innerHTML = `NOSOTROS`
         }else{
             navItem[2].innerHTML = `Nosotros`
         }
-    
+        
         if(scrolled >= 2600){
             navItem[3].innerHTML = `CONTACTO`
         }else{
             navItem[3].innerHTML = `Contacto`
         }
+    }else{
+        navItem[0].classList.add("displayNone")
     }
 })
-
-
 
 // Carrusel de comentarios de clientes
 $(".redes__clientesDicen").owlCarousel({ 
