@@ -28,18 +28,22 @@
             font-size: 16px;
             font-weight: 400;
         }
-        
+
+        .historia__text{
+            text-align: justify;
+        }
     }
 
     .valores__ul {
     margin-top: 25px;
     display: block;
+    padding-left: 15px;
         .valores__ul__li{
-            list-style: none;
+            list-style-image: url(../imagenes/estrella.svg);
             
             .valores__ul__li__items{
                 text-align: left;
-            font-size: 16px;
+                font-size: 16px;
             }
         }
     }
@@ -53,9 +57,9 @@
     }   
 }
 
-.aboutUs{
-    .imagenHistoria{
-        @media (min-width: 1116px) {
+@media (min-width: 1116px) {
+        .aboutUs{
+            .imagenHistoria{
             width: 680px;    
             height: 595px;
 
@@ -65,7 +69,6 @@
                 background-color: #a7a3a3;
                 opacity: 0.4;
                 margin-top: 345px;
-                
             }
         }
     }
@@ -77,15 +80,14 @@
         flex-direction: row-reverse; 
         justify-content: space-between;
     }
-
+    
     .aboutInnerContainer{
-            // margin: 200px;
-            padding: 10px;
+        padding: 10px;
 
-            .parrafoResponsive {
-                width: 650px;
-                height: 38px;
-                
-            } 
+        .parrafoResponsive {
+            width: 650px;
+            height: 38px;
+            
+        }
     }
 }

@@ -54,54 +54,81 @@ $(".seccionProductos__container").owlCarousel({
 
 // Display vertical de barra de navegación
 
+const navVerticalContainer = document.getElementsByClassName("navVerticalContainer")[0];
 const navVertical = document.getElementsByClassName("navVertical")[0];
 const bars = document.getElementsByClassName("nav__bars")[0];
-console.log(navVertical)
-bars.addEventListener("click", () => {
-    navVertical.classList.toggle("navVerticalOn")
-})
+const times = document.getElementsByClassName("nav__bars")[1];
 
-// Scroll de barra de navegación
 const navBar = document.getElementsByClassName("nav")[0];
-window.addEventListener('scroll', () =>{
-    const scrolled = window.scrollY;
+const navItem = document.getElementsByClassName("nav__a")
 
+// Eventos
+bars.addEventListener("click", navVerticalContainerOn);
+bars.addEventListener("click", navVerticalOn);
+bars.addEventListener("click", iconoBars);
+times.addEventListener("click", navVerticalContainerOn);
+times.addEventListener("click", navVerticalOn);
+times.addEventListener("click", iconoBars);
+// Scroll de barra de navegación:
+window.addEventListener('scroll', scrollNav)
+
+
+
+// Funciones
+function navVerticalContainerOn() {
+    navVerticalContainer.classList.toggle("visibility")
+}
+
+function navVerticalOn() {
+    setTimeout(() => {
+        navVertical.classList.toggle("navVerticalOn")}, 50);
+    }
+    
+    function iconoBars() {
+        times.classList.toggle("displayNone")
+        bars.classList.toggle("displayNone")
+    }
+    
+    
+// Función del scroll de navegación
+function scrollNav() {
+    const scrolled = window.scrollY;
+    
     if(scrolled >= 668){
         navBar.classList.remove("displayNoneNav")
     }else{
         navBar.classList.add("displayNoneNav");
     }
-})
-
+}
+    
+    
 // Scroll de items de la barra de navegación
-const navItem = document.getElementsByClassName("nav__a")
 window.addEventListener('scroll', () => {
-    const scrolled = parseInt(window.scrollY);
+const scrolled = parseInt(window.scrollY);
 
-    
-    if((scrolled >= 668) && (scrolled < 1990)){
-        navItem[1].classList.remove("displayNone")
-        navItem[1].innerHTML = `CATÁLOGO`
-    }else{
-        navItem[1].classList.add("displayNone");
-        navItem[1].innerHTML = `Catálogo`
-    }
-    
-    if((scrolled >= 1990) && (scrolled < 3400)){
-        navItem[2].classList.remove("displayNone")
-        navItem[2].innerHTML = `NOSOTROS`
-    }else{
-        navItem[2].classList.add("displayNone");
-        navItem[2].innerHTML = `Nosotros`
-    }
-    
-    if(scrolled >= 3400){
-        navItem[3].classList.remove("displayNone")
-        navItem[3].innerHTML = `CONTACTO`
-    }else{
-        navItem[3].classList.add("displayNone");
-        navItem[3].innerHTML = `Contacto`
-    }
+if((scrolled >= 668) && (scrolled < 1990)){
+    navItem[1].classList.remove("displayNone")
+    navItem[1].innerHTML = `CATÁLOGO`
+}else{
+    navItem[1].classList.add("displayNone");
+    navItem[1].innerHTML = `Catálogo`
+}
+
+if((scrolled >= 1990) && (scrolled < 3400)){
+    navItem[2].classList.remove("displayNone")
+    navItem[2].innerHTML = `NOSOTROS`
+}else{
+    navItem[2].classList.add("displayNone");
+    navItem[2].innerHTML = `Nosotros`
+}
+
+if(scrolled >= 3400){
+    navItem[3].classList.remove("displayNone")
+    navItem[3].innerHTML = `CONTACTO`
+}else{
+    navItem[3].classList.add("displayNone");
+    navItem[3].innerHTML = `Contacto`
+}
 
 
     
