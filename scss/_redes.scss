@@ -55,7 +55,7 @@
                     text-decoration: none;
                     margin: 10px;
                     font-size: 50px;
-                    color: $marronO;    
+                    color: black;    
                 }
 
             }
@@ -74,15 +74,18 @@
 
 @media (min-width: 900px){
     .redes{
-
+        h3{
+            margin-top: 50px;
+        }
         .redes__iconos{
             ul{
+                margin-bottom: 100px;
                 list-style: none;
                 display: flex;
                 justify-content: flex-start;
                 i{
                     font-size: 80px;
-                    margin: 40px;
+                    margin: 25px;
                 }
             }
     

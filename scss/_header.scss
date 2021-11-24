@@ -25,36 +25,42 @@
     .header__top__6{
         background: url("../imagenes/pequenias/6.png") no-repeat center center/cover;
     }
+    .header__top__7{
+        background: url("../imagenes/pequenias/hombre1.png") no-repeat center center/cover;
+    }
+    .header__top__8{
+        background: url("../imagenes/pequenias/hombre2.png") no-repeat center center/cover;
+    }
 
     .headerLogoContainer{
         position: absolute;
-        top: 120px;
+        top: 200px;
         margin-left: 10px;
         
         .headerLogo{
             width: 100px;
             height: 100px;
-            background-color: #a7a3a3;
             margin-left: 10px;
         }
-        .headerTitulo{
-            font-weight: 400;
-            font-family: 'Playfair Display', serif;
-            font-size: 24px;
-            width: 112px;
-            padding-top: 10px;
-            padding-left: 10px;
-            color: $marronO;
-            justify-self: flex-end;
-        }
     }
-
+    
     .header__bottom{
-        height: 330px;
         padding: 20px;
         display: flex;
         flex-flow: column;
         justify-content: space-between;
+        .header__changui{
+            font-family: 'Playfair Display', serif;
+            font-size: 48px;
+            color: $marronO;
+            text-align: center;
+        }
+        .header__jewels{
+            font-size: 20px;
+            text-align: center;
+            color: $marronF;
+            margin-bottom: 20px;
+        }
         .header__bottom__titulo{
             font-family: 'Playfair Display', serif;
             color: $marronO;
@@ -63,12 +69,14 @@
             font-size: 24px;
             font-weight: 400;
             text-align: center;
-            line-height: 21,09px;
+            margin-bottom: 80px;
+
         }
         .header__bottom__texto{
             color: $marronO;
             font-size: 16px;
             font-weight: bold;
+            display: none;
         }
         .header__bottom__puedesVisitarnos{
             color: $marronO;
@@ -86,7 +94,7 @@
                     .header__bottom__i{
                         margin: 10px;
                         font-size: 50px;
-                        color: $marronO;
+                        color: black;
                     }
             }
         }
@@ -141,6 +149,18 @@
             background: url(../imagenes/grandes/IMG_5794.png) no-repeat center center/cover;
         }
     }
+
+    .header__top__7{
+        @media (min-width: 1200px) {
+            background: url(../imagenes/grandes/hombre1.png) no-repeat center center/cover;
+        }
+    }
+    
+    .header__top__8{
+        @media (min-width: 1200px) {
+            background: url(../imagenes/grandes/hombre2.png) no-repeat center center/cover;
+        }
+    }
     
     .headerLogoContainer{
         .headerLogo{
@@ -152,10 +172,10 @@
             }
             
             @media (min-width: 1440px) {
-                width: 200px;
-                height: 200px;
-                margin-left: 100px;
-                margin-top: 100px;   
+                width: 250px;
+                height: 250px;
+                margin-left: 20px;
+                // margin-top: 100px;   
             }
         }
 
@@ -177,11 +197,23 @@
     }
     
     .header__bottom{
+        .header__changui{
+            @media (min-width: 1440px) {
+                font-size: 80px;
+            }
+        }
+        .header__jewels{
+            @media (min-width: 1440px) {
+                font-size: 30px;
+                margin-bottom: 40px;
+            }
+        }
         .header__bottom__titulo{
             @media (min-width: 900px) {
                 font-size: 28px;
                 height: 86px;
                 width: 360px;
+                margin-bottom: 30px;
                 
             }
             @media (min-width: 1440px) {

@@ -16,9 +16,9 @@
         align-items: center;
         font-family: 'Playfair Display', serif;
         .nav__logo__img{
-            width: 49px;
-            height: 50px;
-            background-color: #e8e5e5;
+            width: 53px;
+            height: 55px;
+            // background-color: #e8e5e5;
         }
         .nav__logo__titulo{
             color: $blanco;
@@ -30,7 +30,7 @@
     }
     .nav__bars{
         font-size: 20px;
-        color: $blanco;
+        color: black;
         align-self: center;
         margin-right: 30px;
         cursor: pointer;
@@ -133,10 +133,16 @@
 @media #{$desktop} {
     .nav{
         height: 144px;
+        padding-left: 1px;
         .nav__logo{
             .nav__logo__img{
                 width: 132px;
                 height: 132px;
+                display: none;
+            }
+            .nav__logo__imgBig{
+                height: 140px;
+                display: block;
             }
             .nav__logo__titulo{
                 display: inline-block;

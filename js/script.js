@@ -22,7 +22,7 @@ $(".seccionProductos__container").owlCarousel({
     autoplayHoverPause: true,
     responsive: {
         0:{
-            items: 2.2,
+            items: 2.1,
             nav: false,
         },
         400:{

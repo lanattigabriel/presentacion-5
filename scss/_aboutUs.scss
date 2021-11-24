@@ -28,10 +28,6 @@
             font-size: 16px;
             font-weight: 400;
         }
-
-        .historia__text{
-            text-align: justify;
-        }
     }
 
     .valores__ul {
@@ -74,7 +70,7 @@
     }
 }
 
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
     .responsiveAbout {
         display: flex; 
         flex-direction: row-reverse; 
@@ -83,6 +79,10 @@
     
     .aboutInnerContainer{
         padding: 10px;
+
+        .historia__text{
+            text-align: center;
+        }
 
         .parrafoResponsive {
             width: 650px;
