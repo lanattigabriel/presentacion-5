@@ -315,14 +315,14 @@ body {
 /* Media Queries Navegación */
 @media (min-width: 785px) {
   .nav {
-    height: 144px;
+    height: 80px;
     padding-left: 1px; }
     .nav .nav__logo .nav__logo__img {
       width: 132px;
       height: 132px;
       display: none; }
     .nav .nav__logo .nav__logo__imgBig {
-      height: 140px;
+      height: 80px;
       display: block; }
     .nav .nav__logo .nav__logo__titulo {
       display: inline-block;
@@ -331,7 +331,7 @@ body {
     .nav .nav__bars {
       display: none; }
     .nav .nav__ul .nav__li .nav__a {
-      font-size: 32px; } }
+      font-size: 25px; } }
 
 /* Productos */
 .seccionProductos__container {

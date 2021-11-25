@@ -132,7 +132,7 @@
 
 @media #{$desktop} {
     .nav{
-        height: 144px;
+        height: 80px;
         padding-left: 1px;
         .nav__logo{
             .nav__logo__img{
@@ -141,7 +141,7 @@
                 display: none;
             }
             .nav__logo__imgBig{
-                height: 140px;
+                height: 80px;
                 display: block;
             }
             .nav__logo__titulo{
@@ -156,7 +156,7 @@
         .nav__ul{
             .nav__li{
                 .nav__a{
-                    font-size: 32px;
+                    font-size: 25px;
                 }
             }
         }
