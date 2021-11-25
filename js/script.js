@@ -60,7 +60,12 @@ const bars = document.getElementsByClassName("nav__bars")[0];
 const times = document.getElementsByClassName("nav__bars")[1];
 
 const navBar = document.getElementsByClassName("nav")[0];
-const navItem = document.getElementsByClassName("nav__a")
+const navItem = document.getElementsByClassName("nav__a");
+
+const home = document.getElementsByClassName("navVertical__a")[0];
+const catalogo = document.getElementsByClassName("navVertical__a")[1];
+const nosotros = document.getElementsByClassName("navVertical__a")[2];
+const contacto = document.getElementsByClassName("navVertical__a")[3];
 
 // Eventos
 bars.addEventListener("click", navVerticalContainerOn);
@@ -70,7 +75,23 @@ times.addEventListener("click", navVerticalContainerOn);
 times.addEventListener("click", navVerticalOn);
 times.addEventListener("click", iconoBars);
 // Scroll de barra de navegación:
-window.addEventListener('scroll', scrollNav)
+window.addEventListener('scroll', scrollNav);
+// Menu Vertical
+home.addEventListener("click", navVerticalContainerOn);
+catalogo.addEventListener("click", navVerticalContainerOn);
+nosotros.addEventListener("click", navVerticalContainerOn);
+contacto.addEventListener("click", navVerticalContainerOn);
+
+home.addEventListener("click", navVerticalOn);
+catalogo.addEventListener("click", navVerticalOn);
+nosotros.addEventListener("click", navVerticalOn);
+contacto.addEventListener("click", navVerticalOn);
+
+home.addEventListener("click", iconoBars);
+catalogo.addEventListener("click", iconoBars);
+nosotros.addEventListener("click", iconoBars);
+contacto.addEventListener("click", iconoBars);
+
 
 
 
@@ -82,12 +103,13 @@ function navVerticalContainerOn() {
 function navVerticalOn() {
     setTimeout(() => {
         navVertical.classList.toggle("navVerticalOn")}, 50);
-    }
+}
     
-    function iconoBars() {
-        times.classList.toggle("displayNone")
-        bars.classList.toggle("displayNone")
-    }
+function iconoBars() {
+    times.classList.toggle("displayNone")
+    bars.classList.toggle("displayNone")
+}
+
     
     
 // Función del scroll de navegación
@@ -105,6 +127,7 @@ function scrollNav() {
 // Scroll de items de la barra de navegación
 window.addEventListener('scroll', () => {
 const scrolled = parseInt(window.scrollY);
+// console.log(scrolled)
 
 if((scrolled >= 668) && (scrolled < 1990)){
     navItem[1].classList.remove("displayNone")
@@ -114,7 +137,7 @@ if((scrolled >= 668) && (scrolled < 1990)){
     navItem[1].innerHTML = `Catálogo`
 }
 
-if((scrolled >= 1990) && (scrolled < 3400)){
+if((scrolled >= 1990) && (scrolled < 3800)){
     navItem[2].classList.remove("displayNone")
     navItem[2].innerHTML = `NOSOTROS`
 }else{
@@ -122,7 +145,7 @@ if((scrolled >= 1990) && (scrolled < 3400)){
     navItem[2].innerHTML = `Nosotros`
 }
 
-if(scrolled >= 3400){
+if(scrolled >= 3800){
     navItem[3].classList.remove("displayNone")
     navItem[3].innerHTML = `CONTACTO`
 }else{
@@ -139,7 +162,7 @@ if(scrolled >= 3400){
         navItem[0].innerHTML = `Home`
 
         
-        if(scrolled >= 550){
+        if(scrolled >= 1028){
             navBar.classList.remove("displayNoneNav")
         }else{
             navBar.classList.add("displayNoneNav");
@@ -149,19 +172,19 @@ if(scrolled >= 3400){
             item.classList.remove("displayNone")
         }
         
-        if((scrolled >= 550) && (scrolled < 1900)){
+        if((scrolled >= 1028) && (scrolled < 2660)){
             navItem[1].innerHTML = `CATÁLOGO`
         }else{
             navItem[1].innerHTML = `Catálogo`
         }
         
-        if((scrolled >= 1900) && (scrolled < 2600)){
+        if((scrolled >= 2660) && (scrolled < 3332)){
             navItem[2].innerHTML = `NOSOTROS`
         }else{
             navItem[2].innerHTML = `Nosotros`
         }
         
-        if(scrolled >= 2600){
+        if(scrolled >= 3332){
             navItem[3].innerHTML = `CONTACTO`
         }else{
             navItem[3].innerHTML = `Contacto`
