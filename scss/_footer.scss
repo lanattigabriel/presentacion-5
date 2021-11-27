@@ -11,7 +11,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        height: 170px;
+        
         
     }
 
@@ -19,7 +19,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            height: 216px;
+            
             
         }
 
@@ -40,13 +40,13 @@
 
             @media (min-width: 900px) {
                 height: 170px;
-                width: 170px; 
+                width: 400px; 
                 margin: 0px 10px;                 
              }
 
              @media (min-width: 1200px) {
-                height: 216px;
-                width: 216px; 
+                height: 132px;
+                width: 500px; 
                 margin: 0px 15px;                 
              }
 
@@ -79,6 +79,7 @@
             p {
                 font-size: 20px;
                 width: 248px;
+                
             }
     }
                 @media (min-width: 1200px) {
@@ -91,6 +92,7 @@
                         p {
                             font-size: 24px;
                             display: block;
+                            
                         }
                 }
 
@@ -170,7 +172,7 @@
             }
 
             @media (min-width: 900px) {
-                height: 170px;
+                height: 100px;
                 margin-top: 30px;
                 margin-left: 100px;
                 text-align: left;
