@@ -107,13 +107,20 @@
             padding: 0 30px;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
+            
             .iconosVertical__li{
                 list-style: none;
                 font-size: 40px;
                 padding: 10px;
                 text-align: center;
-                color: $marronO;
+                
+                a {
+                    text-decoration: none;
+                    color: $marronO;
+                }
             }
+            
+
         }
     }
     

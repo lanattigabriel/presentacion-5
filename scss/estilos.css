@@ -354,6 +354,9 @@ body {
   font-size: 40px;
   padding: 10px;
   text-align: center;
+}
+.navVerticalContainer .navVertical .iconosVertical .iconosVertical__li a {
+  text-decoration: none;
   color: #592E0B;
 }
 .navVerticalContainer .navVerticalOn {
