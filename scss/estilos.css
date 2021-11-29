@@ -344,14 +344,14 @@ body {
   color: #000;
 }
 .navVerticalContainer .navVertical .iconosVertical {
-  margin-top: 40vh;
+  margin-top: 18vh;
   padding: 0 30px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
 .navVerticalContainer .navVertical .iconosVertical .iconosVertical__li {
   list-style: none;
-  font-size: 40px;
+  font-size: 36px;
   padding: 10px;
   text-align: center;
 }
@@ -670,7 +670,7 @@ body {
   font-family: "Playfair Display", serif;
 }
 .footer .footer__bottom .footer__bottom__contacto p {
-  font-size: 16px;
+  font-size: 14px;
 }
 @media (min-width: 900px) {
   .footer .footer__bottom .footer__bottom__contacto {
@@ -706,11 +706,14 @@ body {
   font-size: 18px;
   font-weight: normal;
   font-family: "Playfair Display", serif;
+}
+.footer .footer__bottom .footer__bottom__disenio .footerTeam {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
   text-align: right;
 }
 .footer .footer__bottom .footer__bottom__disenio p {
   font-size: 14px;
-  text-align: right;
 }
 @media (min-width: 900px) {
   .footer .footer__bottom .footer__bottom__disenio {

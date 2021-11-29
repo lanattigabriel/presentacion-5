@@ -129,7 +129,7 @@
             }
             
             p {
-                font-size: 16px;
+                font-size: 14px;
             }
 
             @media (min-width: 900px) {
@@ -172,12 +172,17 @@
                 font-size: 18px;
                 font-weight: normal;
                 font-family: 'Playfair Display', serif;  
-                text-align: right;
+                //text-align: right;
             }
             
-            p {
+            .footerTeam {
+                font-family: 'Roboto', sans-serif; 
                 font-size: 14px;
                 text-align: right;
+            }
+
+            p {
+                font-size: 14px;
             }
 
             @media (min-width: 900px) {
