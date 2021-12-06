@@ -58,13 +58,13 @@ body {
 .header .header__bottom .header__changui {
   font-family: "Playfair Display", serif;
   font-size: 48px;
-  color: #592E0B;
+  color: black;
   text-align: center;
 }
 .header .header__bottom .header__jewels {
   font-size: 20px;
   text-align: center;
-  color: #644C39;
+  color: #7C8278;
   margin-bottom: 20px;
 }
 .header .header__bottom .header__bottom__titulo {
@@ -101,7 +101,7 @@ body {
 .header .header__bottom .header__bottom__ul .header__bottom__li .header__bottom__i {
   margin: 10px;
   font-size: 50px;
-  color: black;
+  color: #7C8278;
 }
 
 /* Media Queries Header */
@@ -552,11 +552,10 @@ body {
 }
 /* Footer */
 .footer {
-  background-color: black;
+  background-color: #7C8278;
   display: block;
   padding: 10px 15px;
   height: 230px;
-  color: #F8FCFF;
 }
 @media (min-width: 900px) {
   .footer {
@@ -615,6 +614,7 @@ body {
 .footer .footer__top .footer__top__titulo h3 {
   font-size: 32px;
   font-weight: normal;
+  color: black;
 }
 .footer .footer__top .footer__top__titulo p {
   font-size: 20px;
