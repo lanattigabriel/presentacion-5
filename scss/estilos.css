@@ -372,7 +372,7 @@ body {
 /* Media Queries Navegación */
 @media (min-width: 785px) {
   .nav {
-    height: 80px;
+    height: 100px;
     padding-left: 1px;
   }
   .nav .nav__logo .nav__logo__img {
