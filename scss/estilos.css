@@ -712,6 +712,10 @@ body {
   font-size: 14px;
   text-align: right;
 }
+.footer .footer__bottom .footer__bottom__disenio a {
+  text-decoration: none;
+  color: white;
+}
 .footer .footer__bottom .footer__bottom__disenio p {
   font-size: 14px;
 }
