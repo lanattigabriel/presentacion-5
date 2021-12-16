@@ -265,8 +265,8 @@ body {
   font-family: "Playfair Display", serif;
 }
 .nav .nav__logo .nav__logo__img {
-  width: 53px;
-  height: 55px;
+  width: 63px;
+  height: 65px;
 }
 .nav .nav__logo .nav__logo__titulo {
   color: #F8FCFF;
@@ -595,7 +595,7 @@ body {
 }
 @media (min-width: 700px) {
   .footer .footer__top .footer__top__img {
-    height: 134px;
+    height: 114px;
     width: 400px;
     margin: 0px 10px;
   }
@@ -699,8 +699,8 @@ body {
   }
 }
 .footer .footer__bottom .footer__bottom__disenio {
-  margin-top: 3px;
-  font-size: 16px;
+  margin-top: 2px;
+  width: 210px;
 }
 .footer .footer__bottom .footer__bottom__disenio h5 {
   font-size: 18px;
@@ -716,20 +716,17 @@ body {
   text-decoration: none;
   color: white;
 }
-.footer .footer__bottom .footer__bottom__disenio p {
-  font-size: 14px;
-}
 @media (min-width: 900px) {
   .footer .footer__bottom .footer__bottom__disenio {
     height: 100px;
     margin-top: 30px;
-    margin-left: 100px;
+    margin-left: 50px;
   }
   .footer .footer__bottom .footer__bottom__disenio h5 {
     font-size: 20px;
     text-align: left;
   }
-  .footer .footer__bottom .footer__bottom__disenio p {
+  .footer .footer__bottom .footer__bottom__disenio a {
     font-size: 14px;
     text-align: left;
   }
@@ -743,7 +740,7 @@ body {
   .footer .footer__bottom .footer__bottom__disenio h5 {
     font-size: 24px;
   }
-  .footer .footer__bottom .footer__bottom__disenio p {
+  .footer .footer__bottom .footer__bottom__disenio a {
     font-size: 14px;
   }
 }
