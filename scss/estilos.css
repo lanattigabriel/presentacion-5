@@ -699,8 +699,8 @@ body {
   }
 }
 .footer .footer__bottom .footer__bottom__disenio {
-  margin-top: 2px;
-  width: 210px;
+  margin-top: 3px;
+  text-align: right;
 }
 .footer .footer__bottom .footer__bottom__disenio h5 {
   font-size: 18px;
@@ -710,11 +710,14 @@ body {
 .footer .footer__bottom .footer__bottom__disenio .footerTeam {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
-  text-align: right;
 }
 .footer .footer__bottom .footer__bottom__disenio a {
-  text-decoration: none;
   color: white;
+}
+@media (min-width: 530px) {
+  .footer .footer__bottom .footer__bottom__disenio {
+    width: 210px;
+  }
 }
 @media (min-width: 900px) {
   .footer .footer__bottom .footer__bottom__disenio {
